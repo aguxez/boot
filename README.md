@@ -9,3 +9,7 @@ Name, rank and champion being played... This only works for Latin America North 
 You need a Discord API Key, discord.py and an Api key from the Riot Games API for this to work
 
 Already has the basic dependencies files needed to run on Heroku.
+
+###### Example output
+
+![alt tag](http://i.imgur.com/gh6vuGv.png)
