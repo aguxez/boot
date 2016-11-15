@@ -7,3 +7,5 @@ The bot use is fairly simple, just put it on your server; use `find` + the playe
 Name, rank and champion being played... This only works for Latin America North as for the day of this upload.
 
 You need a Discord API Key, discord.py and an Api key from the Riot Games API for this to work
+
+Already has the basic dependencies files needed to run on Heroku.
