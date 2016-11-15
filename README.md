@@ -12,4 +12,4 @@ Already has the basic dependencies files needed to run on Heroku.
 
 ###### Example output
 
-![alt tag](http://i.imgur.com/gh6vuGv.png)
+![alt tag](http://i.imgur.com/iBwm8am.jpg)
