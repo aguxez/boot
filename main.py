@@ -19,8 +19,6 @@ bot = commands.Bot(command_prefix="-")
 bot.remove_command('help')
 logging.basicConfig(level=logging.INFO)
 
-startup_ext = ['commands.music']
-
 
 @bot.async_event
 def main():
@@ -46,7 +44,7 @@ def on_message(message):
         name = name_sub.replace(" ", "")
 
         r = requests.get("https://lan.api.pvp.net/api/lol/lan/v1.4/summoner"
-                         "/by-name/{}?api_key=RGAPI-cfdd3412-0561-4380-a341-53afd1a0881e".format(name)).json()
+                         "/by-name/{}?api_key=Your-Api-KEY".format(name)).json()
 
         summ_id = r[''.replace('', name).lower()]['id']
 
