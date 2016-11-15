@@ -24,7 +24,7 @@ startup_ext = ['commands.music']
 
 @bot.async_event
 def main():
-    yield from bot.login('MjM2MjU4ODU0NTQ2MDQ2OTc3.CuG5vQ.rtcW069o1ljld_Nc_kzBfP-_Ndo')
+    yield from bot.login(Your API Key)
     yield from bot.connect()
 
 
@@ -51,7 +51,7 @@ def on_message(message):
         summ_id = r[''.replace('', name).lower()]['id']
 
         r_match = requests.get("https://lan.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo"
-                               "/LA1/{}?api_key=RGAPI-cfdd3412-0561-4380-a341-53afd1a0881e"
+                               "/LA1/{}?api_key=Your-Api-KEY"
                                .format(summ_id)).json()
         try:
             num = -1
@@ -66,11 +66,11 @@ def on_message(message):
                     champ = i['championId']
 
                     r_team = requests.get("https://lan.api.pvp.net/api/lol/lan/v2.5/league/by-summoner/{}/"
-                                          "entry?api_key=RGAPI-cfdd3412-0561-4380-a341-53afd1a0881e"
+                                          "entry?api_key=Your-Api-KEY"
                                           .format(e_id)).json()
 
                     champ_r = requests.get("https://global.api.pvp.net/api/lol/static-data/lan/v1.2/champion?"
-                                           "api_key=RGAPI-cfdd3412-0561-4380-a341-53afd1a0881e").json()
+                                           "api_key=Your-Api-KEY").json()
 
                     x = r_team["{}".format(e_id)][0]
                     e_tier = x['tier']
@@ -85,7 +85,7 @@ def on_message(message):
 
                             champ_r = requests.get(
                                 "https://global.api.pvp.net/api/lol/static-data/lan/v1.2/champion?"
-                                "api_key=RGAPI-cfdd3412-0561-4380-a341-53afd1a0881e").json()
+                                "api_key=Your-Api-KEY").json()
 
                             for key, value in champ_r['data'].items():
                                 c_name = value['name']
